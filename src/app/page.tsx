@@ -32,8 +32,11 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
+                {DATA.avatarUrl ? (
+                  <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                ) : (
+                  <AvatarFallback>{DATA.initials}</AvatarFallback>
+                )}
               </Avatar>
             </BlurFade>
           </div>
@@ -61,7 +64,7 @@ export default function Page() {
             >
               <ResumeCard
                 key={work.company}
-                logoUrl={work.logoUrl}
+                logoUrl={work.logoUrl || undefined}
                 altText={work.company}
                 title={work.company}
                 subtitle={work.title}
@@ -87,7 +90,7 @@ export default function Page() {
               <ResumeCard
                 key={education.school}
                 href={education.href}
-                logoUrl={education.logoUrl}
+                logoUrl={education.logoUrl || undefined}
                 altText={education.school}
                 title={education.school}
                 subtitle={education.degree}
