@@ -4,9 +4,9 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Priyanshu Gupta",
   initials: "PG",
-  url: "https://priyanshugupta.dev",
+  url: "#",
   location: "Biratnagar, Nepal",
-  locationLink: "https://www.google.com/maps/place/biratnagar",
+  locationLink: "#",
   description:
     "Frontend Developer passionate about creating beautiful, responsive web applications. I love crafting user experiences and building modern interfaces.",
   summary:
@@ -53,7 +53,7 @@ export const DATA = {
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:priyanshuxy123@gmail.com",
         icon: Icons.email,
         navbar: false,
       },
@@ -63,7 +63,7 @@ export const DATA = {
   work: [
     {
       company: "IIDT",
-      href: "https://iidt.ac.in",
+      href: "#",
       badges: ["Internship"],
       location: "New Delhi, India",
       title: "Full Stack Web Developer",
@@ -89,7 +89,7 @@ export const DATA = {
   education: [
     {
       school: "Sri Venkateswara College Of Engineering & Technology (Autonomous)",
-      href: "https://svcetedu.org/",
+      href: "#",
       degree: "Bachelor's in Computer Science and Engineering",
       logoUrl: "", // Remove or set to empty if image doesn't exist
       start: "2022",
@@ -97,7 +97,7 @@ export const DATA = {
     },
     {
       school: "Shikshadeep College",
-      href: "http://shikshadeep.edu.np/",
+      href: "#",
       degree: "Intermediate (+2)",
       logoUrl: "", // Remove or set to empty if image doesn't exist
       start: "2020",
@@ -107,7 +107,7 @@ export const DATA = {
   projects: [
     {
       title: "E-Commerce Platform",
-      href: "https://ecommerce-demo.com",
+      href: "#",
       dates: "March 2024 - April 2024",
       active: true,
       description:
@@ -124,12 +124,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://ecommerce-demo.com",
+          href: "#",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/priyanshugupta/ecommerce-platform",
+          href: "#",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -138,7 +138,7 @@ export const DATA = {
     },
     {
       title: "Portfolio Website",
-      href: "https://portfolio-demo.com",
+      href: "#",
       dates: "February 2024 - March 2024",
       active: true,
       description:
@@ -153,12 +153,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://portfolio-demo.com",
+          href: "#",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/priyanshugupta/portfolio-website",
+          href: "#",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -167,7 +167,7 @@ export const DATA = {
     },
     {
       title: "Task Management App",
-      href: "https://taskmanager-demo.com",
+      href: "#",
       dates: "January 2024 - February 2024",
       active: true,
       description:
@@ -184,12 +184,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://taskmanager-demo.com",
+          href: "#",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/priyanshugupta/task-manager",
+          href: "#",
           icon: <Icons.github className="size-3" />,
         },
       ],
