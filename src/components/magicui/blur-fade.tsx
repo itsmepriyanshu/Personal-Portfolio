@@ -30,8 +30,9 @@ const BlurFade = ({
 }: BlurFadeProps) => {
   const ref = useRef(null);
   const inViewResult = useInView(ref, { 
-    once: true, 
-    amount: inViewMargin 
+    once: true,
+    margin: `${inViewMargin}px`,
+    amount: 0.5
   });
   const isInView = !inView || inViewResult;
   const defaultVariants: Variants = {
