@@ -11,7 +11,7 @@ export const DATA = {
     "Frontend Developer passionate about creating beautiful, responsive web applications. I love crafting user experiences and building modern interfaces.",
   summary:
     "As a dedicated Frontend Developer, I specialize in creating engaging and responsive web applications using modern technologies like React, Next.js, and TypeScript. I have experience working on various projects ranging from e-commerce platforms to complex web applications. [I completed my education in computer science](/#education) and [gained valuable experience through internships](/#work), including a full-stack web development role at IIDT. I'm passionate about staying up-to-date with the latest frontend technologies and best practices, constantly learning new frameworks and tools to deliver exceptional user experiences.",
-  avatarUrl: "/me.png",
+  avatarUrl: "", // Remove or set to empty if image doesn't exist
   skills: [
     "React",
     "Next.js",
@@ -67,7 +67,7 @@ export const DATA = {
       badges: ["Internship"],
       location: "New Delhi, India",
       title: "Full Stack Web Developer",
-      logoUrl: "/iidt.png",
+      logoUrl: "", // Remove or set to empty if image doesn't exist
       start: "June 2024",
       end: "August 2024",
       description:
@@ -79,7 +79,7 @@ export const DATA = {
       href: "#",
       location: "Remote",
       title: "Frontend Developer",
-      logoUrl: "/freelance.png",
+      logoUrl: "", // Remove or set to empty if image doesn't exist
       start: "January 2024",
       end: "Present",
       description:
@@ -91,7 +91,7 @@ export const DATA = {
       school: "Sri Venkateswara College Of Engineering & Technology (Autonomous)",
       href: "https://svcetedu.org/",
       degree: "Bachelor's in Computer Science and Engineering",
-      logoUrl: "/svcet.png",
+      logoUrl: "", // Remove or set to empty if image doesn't exist
       start: "2022",
       end: "2025",
     },
@@ -99,7 +99,7 @@ export const DATA = {
       school: "Shikshadeep College",
       href: "http://shikshadeep.edu.np/",
       degree: "Intermediate (+2)",
-      logoUrl: "/shikshadeep.png",
+      logoUrl: "", // Remove or set to empty if image doesn't exist
       start: "2020",
       end: "2022",
     },
