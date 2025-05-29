@@ -4,13 +4,13 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Priyanshu Gupta",
   initials: "PG",
-  url: "/",
+  url: "",
   location: "Biratnagar, Nepal",
-  locationLink: "https://www.google.com/maps/place/biratnagar",
+  locationLink: "",
   description:
     "Frontend Developer passionate about creating beautiful, responsive web applications. I love crafting user experiences and building modern interfaces.",
   summary:
-    "As a dedicated Frontend Developer, I specialize in creating engaging and responsive web applications using modern technologies like React, Next.js, and TypeScript. I have experience working on various projects ranging from e-commerce platforms to complex web applications. [I completed my education in computer science](/education) and [gained valuable experience through internships](/work), including a full-stack web development role at IIDT. I'm passionate about staying up-to-date with the latest frontend technologies and best practices, constantly learning new frameworks and tools to deliver exceptional user experiences.",
+    "As a dedicated Frontend Developer, I specialize in creating engaging and responsive web applications using modern technologies like React, Next.js, and TypeScript. I have experience working on various projects ranging from e-commerce platforms to complex web applications. I completed my education in computer science and gained valuable experience through internships, including a full-stack web development role at IIDT. I'm passionate about staying up-to-date with the latest frontend technologies and best practices, constantly learning new frameworks and tools to deliver exceptional user experiences.",
   avatarUrl: "", // Remove or set to empty if image doesn't exist
   skills: [
     "React",
@@ -26,34 +26,34 @@ export const DATA = {
     "Figma",
   ],
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "", icon: HomeIcon, label: "Home" },
+    { href: "", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "priyanshuxy123@gmail.com",
-    tel: "+91-9059443511, +977-9862182038",
+    email: "",
+    tel: "",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/itsmepriyanshu",
+        url: "",
         icon: Icons.github,
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/priyanshu-gupta-823669237",
+        url: "",
         icon: Icons.linkedin,
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://x.com/itspriyanshu33",
+        url: "",
         icon: Icons.x,
         navbar: true,
       },
       email: {
         name: "Send Email",
-        url: "mailto:priyanshuxy123@gmail.com",
+        url: "",
         icon: Icons.email,
         navbar: false,
       },
@@ -63,7 +63,7 @@ export const DATA = {
   work: [
     {
       company: "IIDT",
-      href: "/work/iidt",
+      href: "",
       badges: ["Internship"],
       location: "New Delhi, India",
       title: "Full Stack Web Developer",
@@ -76,7 +76,7 @@ export const DATA = {
     {
       company: "Tech Solutions Inc",
       badges: ["Freelance"],
-      href: "/work/tech-solutions",
+      href: "",
       location: "Remote",
       title: "Frontend Developer",
       logoUrl: "", // Remove or set to empty if image doesn't exist
@@ -89,7 +89,7 @@ export const DATA = {
   education: [
     {
       school: "Sri Venkateswara College Of Engineering & Technology (Autonomous)",
-      href: "/education/svce",
+      href: "",
       degree: "Bachelor's in Computer Science and Engineering",
       logoUrl: "", // Remove or set to empty if image doesn't exist
       start: "2022",
@@ -97,7 +97,7 @@ export const DATA = {
     },
     {
       school: "Shikshadeep College",
-      href: "/education/shikshadeep",
+      href: "",
       degree: "Intermediate (+2)",
       logoUrl: "", // Remove or set to empty if image doesn't exist
       start: "2020",
@@ -107,7 +107,7 @@ export const DATA = {
   projects: [
     {
       title: "E-Commerce Platform",
-      href: "/projects/ecommerce",
+      href: "",
       dates: "March 2024 - April 2024",
       active: true,
       description:
@@ -124,12 +124,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "/projects/ecommerce",
+          href: "",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "/projects/ecommerce/source",
+          href: "",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -138,7 +138,7 @@ export const DATA = {
     },
     {
       title: "Portfolio Website",
-      href: "/projects/portfolio",
+      href: "",
       dates: "February 2024 - March 2024",
       active: true,
       description:
@@ -153,12 +153,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "/projects/portfolio",
+          href: "",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "/projects/portfolio/source",
+          href: "",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -167,7 +167,7 @@ export const DATA = {
     },
     {
       title: "Task Management App",
-      href: "/projects/task-manager",
+      href: "",
       dates: "January 2024 - February 2024",
       active: true,
       description:
@@ -184,12 +184,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "/projects/task-manager",
+          href: "",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "/projects/task-manager/source",
+          href: "",
           icon: <Icons.github className="size-3" />,
         },
       ],
