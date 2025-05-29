@@ -61,13 +61,20 @@ export function ProjectCard({
           />
         )}
         {image && image.length > 0 && (
-          <Image
-            src={image}
-            alt={title}
-            width={500}
-            height={300}
-            className="h-40 w-full overflow-hidden object-cover object-top"
-          />
+          <div className="h-40 w-full overflow-hidden">
+            <Image
+              src={image}
+              alt={title}
+              width={500}
+              height={300}
+              className="h-full w-full object-cover object-top"
+              onError={(e) => {
+                // Hide the image on error
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+              }}
+            />
+          </div>
         )}
       </Link>
       <CardHeader className="px-2">
@@ -101,12 +108,19 @@ export function ProjectCard({
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (
-              <Link href={link?.href} key={idx} target="_blank">
+              link?.href ? (
+                <Link href={link.href} key={idx} target="_blank">
+                  <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
+                    {link.icon}
+                    {link.type}
+                  </Badge>
+                </Link>
+              ) : (
                 <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
                   {link.icon}
                   {link.type}
                 </Badge>
-              </Link>
+              )
             ))}
           </div>
         )}
