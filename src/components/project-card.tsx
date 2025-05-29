@@ -46,37 +46,66 @@ export function ProjectCard({
         "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
       }
     >
-      <Link
-        href={href || "#"}
-        className={cn("block cursor-pointer", className)}
-      >
-        {video && video.length > 0 && (
-          <video
-            src={video}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top"
-          />
-        )}
-        {image && image.length > 0 && (
-          <div className="h-40 w-full overflow-hidden">
-            <Image
-              src={image}
-              alt={title}
-              width={500}
-              height={300}
-              className="h-full w-full object-cover object-top"
-              onError={(e) => {
-                // Hide the image on error
-                const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
-              }}
+      {href ? (
+        <Link
+          href={href}
+          className={cn("block cursor-pointer", className)}
+        >
+          {video && video.length > 0 && (
+            <video
+              src={video}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="pointer-events-none mx-auto h-40 w-full object-cover object-top"
             />
-          </div>
-        )}
-      </Link>
+          )}
+          {image && image.length > 0 && (
+            <div className="h-40 w-full overflow-hidden">
+              <Image
+                src={image}
+                alt={title}
+                width={500}
+                height={300}
+                className="h-full w-full object-cover object-top"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                }}
+              />
+            </div>
+          )}
+        </Link>
+      ) : (
+        <div className={cn("block", className)}>
+          {video && video.length > 0 && (
+            <video
+              src={video}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="pointer-events-none mx-auto h-40 w-full object-cover object-top"
+            />
+          )}
+          {image && image.length > 0 && (
+            <div className="h-40 w-full overflow-hidden">
+              <Image
+                src={image}
+                alt={title}
+                width={500}
+                height={300}
+                className="h-full w-full object-cover object-top"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                }}
+              />
+            </div>
+          )}
+        </div>
+      )}
       <CardHeader className="px-2">
         <div className="space-y-1">
           <CardTitle className="mt-1 text-base">{title}</CardTitle>
@@ -109,12 +138,12 @@ export function ProjectCard({
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (
               link?.href ? (
-                <Link href={link.href} key={idx} target="_blank">
-                  <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
+                <a href={link.href} key={idx} target="_blank" rel="noopener noreferrer">
+                  <Badge className="flex gap-2 px-2 py-1 text-[10px]">
                     {link.icon}
                     {link.type}
                   </Badge>
-                </Link>
+                </a>
               ) : (
                 <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
                   {link.icon}
