@@ -198,6 +198,14 @@ export const DATA = {
     },
   ],
   hackathons: [
-    // You can add hackathons here if Priyanshu has participated in any
+    {
+      title: "Smart India Hackathon",
+      dates: "February 2024",
+      location: "Online",
+      description:
+        "Participated in the national level hackathon focusing on solving real-world problems using technology. Developed a web application for educational purposes.",
+      image: "",
+      links: [],
+    },
   ],
 } as const;
