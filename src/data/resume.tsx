@@ -137,7 +137,7 @@ export const DATA = {
     },
     {
       title: "Portfolio Website",
-      href: "https://priyanshu-portfolio.vercel.app/",
+      href: "https://personal-portfolio-hkkn.vercel.app/",
       dates: "February 2024 - March 2024",
       active: true,
       description:
@@ -152,7 +152,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://priyanshu-portfolio.vercel.app/",
+          href: "https://personal-portfolio-hkkn.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
